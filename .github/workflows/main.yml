@@ -91,7 +91,7 @@ jobs:
               $upper = 'ABCDEFGHJKLMNPQRSTUVWXYZ'
               
               $password = @(
-                  ($upper.ToCharArray() | Get-Random -Count 3) -join '',
+                  ($upper.ToCharArray() | Get-Random -Count 3) -join ''
               ) -join ''
               
               return -join ($password.ToCharArray() | Sort-Object {Get-Random})
